@@ -3,7 +3,9 @@ try:
 except ValueError:
     print('не является числом')
 else:
-    if num > 4 and 2 ** 3 == num:
+    if num >= 10:
+        print('целая часть введённого числа содержит более одного знака')
+    elif num > 4 and 2 ** 3 == num:
         print('да')
     elif num > 2 and 2 ** 2 == num:
         print('да')
