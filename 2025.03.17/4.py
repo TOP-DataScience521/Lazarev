@@ -5,11 +5,11 @@ except ValueError:
 else:
     if num >= 10:
         print('целая часть введённого числа содержит более одного знака')
-    elif num > 4 and 2 ** 3 == num:
+    elif num ** (1/3) == 2:
         print('да')
-    elif num > 2 and 2 ** 2 == num:
+    elif num ** (1/2) == 2:
         print('да')
-    elif num in [1, 2]:
+    elif num == 1 or num == 2:
         print('да')
     else:
         print('нет')
