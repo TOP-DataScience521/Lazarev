@@ -4,8 +4,14 @@ if year % 100 and not year % 4 or not year % 400:
 else:
     print('нет')
 
+
 # 2000
 # да
 
+
 # 1900
 # нет
+
+
+# ИТОГ: 4/4
+
