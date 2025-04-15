@@ -17,8 +17,11 @@ for i in range(len(numbers)):
         r_sum += int(numbers[i])
 print(f'{'да' if l_sum == r_sum else 'нет'}')
 
+
 # Введите 6 цифр номера билета: 126351
 # да
-#
+
+
 # Введите 6 цифр номера билета: 467513
 # нет
+

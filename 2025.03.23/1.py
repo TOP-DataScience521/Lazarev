@@ -13,6 +13,7 @@ print()
 for i in range(len(numbers)-1, -1, -1):
     print(int(numbers[i]), end = ' ')
 
+
 # 56
 # 35
 # 98
@@ -21,3 +22,4 @@ for i in range(len(numbers)-1, -1, -1):
 # 85
 #
 # 63 7 98 35 56
+

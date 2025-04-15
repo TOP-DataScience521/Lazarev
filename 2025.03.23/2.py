@@ -18,6 +18,7 @@ while True:
             break
 print(f'\n{sum}')
 
+
 # 9
 # -25
 # 4
@@ -30,3 +31,4 @@ print(f'\n{sum}')
 # -30
 #
 # 69
+

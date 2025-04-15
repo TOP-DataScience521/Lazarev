@@ -21,6 +21,8 @@ while i < j:
     i += 2
 print(f'\n{sum}')
 
+
 # 65
 #
 # 84
+
