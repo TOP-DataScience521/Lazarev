@@ -38,3 +38,39 @@ cities = [
         'Ярославль': 5
     }
 ]
+
+union_cities = {}
+for item in cities:
+    for elem in item:
+        union_cities[elem] = union_cities.get(elem, {item[elem]}) | {item[elem]}
+cnr = 0
+separator = ','
+union_cities = dict(sorted(union_cities.items()))
+for elem in union_cities:
+    cnr += 1
+    if cnr == len(union_cities):
+        separator = ''
+    print(f'{elem!r}: {union_cities[elem]}{separator}')
+
+
+# 'Барнаул': {2},
+# 'Владивосток': {5},
+# 'Воронеж': {3},
+# 'Екатеринбург': {2},
+# 'Ижевск': {4},
+# 'Иркутск': {5, 6},
+# 'Казань': {1, 2, 4},
+# 'Краснодар': {1, 6},
+# 'Красноярск': {7},
+# 'Москва': {4},
+# 'Новокузнецк': {5},
+# 'Новосибирск': {1, 6},
+# 'Оренбург': {6},
+# 'Пермь': {1, 5},
+# 'Самара': {4},
+# 'Тольятти': {7},
+# 'Тюмень': {5},
+# 'Уфа': {3, 5},
+# 'Хабаровск': {5},
+# 'Ярославль': {5}
+
